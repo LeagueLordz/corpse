@@ -60,7 +60,7 @@ public class DragonCorpseEntity extends EnderDragonEntity {
     @Override
     public void tickMovement() {
         this.setVelocity(Vec3d.ZERO);
-        this.lastWingPosition = 0.5f;
+        this.prevWingPosition = 0.5f;
         this.wingPosition = 0.5f;
     }
 
