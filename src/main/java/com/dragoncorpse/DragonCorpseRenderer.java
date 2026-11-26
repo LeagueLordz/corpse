@@ -22,7 +22,7 @@ public class DragonCorpseRenderer extends EnderDragonEntityRenderer {
         matrices.push();
         if (dragon instanceof DragonCorpseEntity corpse) {
             // force wings to stay still, no matter what
-            corpse.lastWingPosition = WING_POSE;
+            corpse.prevWingPosition = WING_POSE;
             corpse.wingPosition = WING_POSE;
 
             matrices.translate(0.0, corpse.getCorpseYOffset(), 0.0);
